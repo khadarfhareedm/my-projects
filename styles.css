@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('C:/Users/md khusru/Downloads/premium_photo-1675788312766-4cdfbf67f59f.avif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.calculator {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding: 0 10px;
+    font-size: 2.5em;
+    border-radius: 1em 1em 0 0;
+    margin-bottom: 20px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+button.operator {
+    background-color: #d4d4d2;
+}
+
+button.equal-sign {
+    background-color: #ff9500;
+    color: white;
+    grid-column: span 2;
+}
+
+button.all-clear {
+    background-color: #ff3b30;
+    color: white;
+}
+
+button:not(.operator):not(.equal-sign):not(.all-clear) {
+    background-color: #f9f9f9;
+}
